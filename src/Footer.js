@@ -13,11 +13,11 @@ export default function Footer() {
           Ruth Bonilla
         </a>{" "}
         and is{" "}
-        <a href="https://github.com/ruthebonilla/Weather-App" target="_blank">
+        <a href="https://github.com/ruthebonilla/weather-react" target="_blank">
           open-sourced on GitHub
         </a>{" "}
         and{" "}
-        <a href="https://practical-kilby-3b5183.netlify.app" target="_blank">
+        <a href="https://sad-hodgkin-5170fa.netlify.app/" target="_blank">
           on Netlify
         </a>
       </h5>
