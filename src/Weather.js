@@ -1,24 +1,23 @@
 import React, { useState } from "react";
 import axios from "axios";
 import "./Weather.css";
+import DateStamp from "./DateStamp";
 
 export default function Weather(props) {
   const [weatherData, setWeatherData] = useState({ ready: false });
   function handleResponse(response) {
-    console.log(response.data);
-    setWeatherData({
-      ready: true, 
-      temperature: response.data.main.temp,
-      wind: response.data.wind.speed,
+      setWeatherData({
+      ready: true,
       city: response.data.name,
+      description: response.data.weather[0].description,
+      temperature: response.data.main.temp,
       humidity: response.data.main.humidity,
+      wind: response.data.wind.speed,
       tempmax: response.data.main.temp_max,
       tempmin: response.data.main.temp_min,
-      description: response.data.weather[0].description,
+      date: new Date(response.data.dt * 1000),
       iconUrl: "http://openweathermap.org/img/wn/10d@2x.png",
-      date: "Tuesday March 2, 2021 07:00pm",
     });
-  
   }
 
   if (weatherData.ready) {
@@ -80,7 +79,7 @@ export default function Weather(props) {
               <p className="current-date">
                 -last updated-
                 <br />
-                {weatherData.date}
+                <DateStamp date={weatherData.date} />
               </p>
 
               <img src={weatherData.iconUrl} alt={weatherData.description} />
