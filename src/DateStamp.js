@@ -40,7 +40,9 @@ export default function DateStamp(props) {
   let year = props.date.getFullYear();
   return (
     <div>
-      {day}, {month} {date} {hours}:{minutes}, {year}
+      {day}, {month} {date} {year}
+      <br />
+      {hours}:{minutes}
     </div>
   );
 }
