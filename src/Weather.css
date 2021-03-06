@@ -16,11 +16,15 @@ h1 {
   font-size: 47px;
 }
 
-strong {
+strong.temp-now {
   position: relative;
-  left: 82px;
+  left: -5px;
   top: 24px;
   font-size: 69px;
+  
+}
+.units{
+
 }
 
 hr {
@@ -38,29 +42,6 @@ img {
   width: 130px;
   padding-bottom: 11px;
   padding-top: 35px;
-}
-
-.units {
-  position: relative;
-  left: 95px;
-  bottom: 17px;
-  font-size: 16px;
-  color: #a885bd;
-}
-
-.unitLink {
-  color: #212529;
-  font-weight: bold;
-}
-.unitLink:hover {
-  color: #463853;
-  font-size: 18px;
-  font-weight: bold;
-}
-.units .active {
-  font-style: italic;
-  font-size: 19px;
-  text-decoration: none;
 }
 
 .temp-info {

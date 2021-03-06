@@ -1,6 +1,7 @@
 import React from "react";
 import DateStamp from "./DateStamp";
 import WeatherIcon from "./WeatherIcon";
+import WeatherUnits from "./WeatherUnits";
 
 export default function WeatherInfo(props) {
   return (
@@ -11,18 +12,7 @@ export default function WeatherInfo(props) {
 
       <div className="row">
         <div className="col">
-          <div className="temp-now">
-            <strong>{Math.round(props.data.temperature)}</strong>
-            <span className="units">
-              <a href="/" className="unitLink">
-                °F
-              </a>
-              |
-              <a href="/" className="unitLink">
-                °C
-              </a>
-            </span>
-          </div>
+          <WeatherUnits fahrenheit={props.data.temperature} />
         </div>
 
         <div className="col">
@@ -42,8 +32,8 @@ export default function WeatherInfo(props) {
         <br />
         <DateStamp date={props.data.date} />
       </p>
-      <WeatherIcon code={props.data.icon}  />
-      
+      <WeatherIcon code={props.data.icon} />
+
       <div className="row"></div>
     </div>
   );
