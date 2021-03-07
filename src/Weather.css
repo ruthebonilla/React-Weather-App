@@ -18,13 +18,14 @@ h1 {
 
 strong.temp-now {
   position: relative;
-  left: -5px;
-  top: 24px;
+  left: 30px;
+  top: 13px;
   font-size: 69px;
-  
 }
-.units{
-
+.units {
+  position: relative;
+  left: 38px;
+  bottom: 26px;
 }
 
 hr {
@@ -45,8 +46,9 @@ img {
 }
 
 .temp-info {
-  margin-left: -150px;
-  margin-top: 28px;
+  position: relative;
+  left: -70px;
+  bottom: -24px;
   list-style-type: none;
   font-size: 16px;
 }
