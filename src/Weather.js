@@ -3,6 +3,7 @@ import axios from "axios";
 import "./Weather.css";
 import DateStamp from "./DateStamp";
 import WeatherInfo from "./WeatherInfo";
+import WeatherForecast from "./WeatherForecast";
 
 export default function Weather(props) {
   const [weatherData, setWeatherData] = useState({ ready: false });
@@ -59,9 +60,10 @@ export default function Weather(props) {
                   search
                 </button>
 
-                <button className="btn btn-current">current ▽</button>
+                
               </form>
               <WeatherInfo data={weatherData} />
+              <WeatherForecast city={weatherData.city}/>
             </div>
           </div>
         </div>

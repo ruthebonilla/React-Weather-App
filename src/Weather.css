@@ -11,63 +11,12 @@
   border-radius: 3%;
 }
 
-h1 {
-  text-align: center;
-  font-size: 47px;
-}
-
-strong.temp-now {
-  position: relative;
-  left: 30px;
-  top: 13px;
-  font-size: 69px;
-}
-.units {
-  position: relative;
-  left: 38px;
-  bottom: 26px;
-}
-
-hr {
-  background-image: linear-gradient(90deg, #536588, #aa76bbcb, #536588);
-  height: 1.5px;
-  margin-top: 2px;
-  width: 77%;
-}
-img {
-  display: block;
-  position: relative;
-  right: -3px;
-  bottom: 59px;
-  margin: 0 auto;
-  width: 130px;
-  padding-bottom: 11px;
-  padding-top: 35px;
-}
-
-.temp-info {
-  position: relative;
-  left: -70px;
-  bottom: -24px;
-  list-style-type: none;
-  font-size: 16px;
-}
-
-p.greeting {
-  text-align: center;
-  font-size: 20px;
-  margin-top: 12px;
-}
-
-p.current-date {
-  text-align: center;
-  font-size: 17px;
-}
 .card-body {
   font-family: "Comfortaa", cursive;
   color: rgb(32, 30, 30);
   font-weight: 470;
 }
+
 .form-group {
   display: inline-block;
   width: 70%;
@@ -83,19 +32,21 @@ p.current-date {
   padding-right: 19px;
   color: white;
 }
+
 .btn-search:hover {
   background: #8675a9;
   border-color: #bfd6fc;
 }
 
-.btn-current {
-  background: #af95c7;
-  border-color: #ffff;
-  color: white;
+p.greeting {
+  text-align: center;
+  font-size: 20px;
+  margin-top: 12px;
 }
-.btn-current:hover {
-  background: #8675a9;
-  border-color: #bfd6fc;
+
+h1 {
+  text-align: center;
+  font-size: 47px;
 }
 
 p.description {
@@ -106,34 +57,41 @@ p.description {
   text-shadow: rgb(0, 0, 0) 0px 0px 12px;
 }
 
-ul.hourly-forecast {
-  display: block;
-  margin: 0 auto;
-  column-count: 1;
-  font-size: 16px;
-  list-style-type: none;
-  margin-top: -55px;
-  margin-bottom: -3px;
-  padding-left: 10px;
-  margin-left: 8px;
-  text-shadow: rgb(255, 255, 255) 0px 0px 20px;
+strong.temp-now {
+  position: relative;
+  left: 30px;
+  top: 13px;
+  font-size: 69px;
 }
 
-img#forecastIcon {
-  display: block;
-  margin: 0 auto;
-  width: 60px;
-  padding: 0;
-  margin-left: -13px;
-  margin-bottom: -5px;
-  margin-top: -5px;
+.units {
+  position: relative;
+  left: 38px;
+  bottom: 26px;
 }
-strong.maxDegree {
-  font-size: 15px;
-  text-shadow: none;
-  color: #1e1f22;
+
+.temp-info {
+  position: relative;
+  left: -70px;
+  bottom: -24px;
+  list-style-type: none;
+  font-size: 16px;
 }
-span.minDegree {
-  font-size: 14px;
-  text-shadow: none;
+
+hr {
+  background-image: linear-gradient(90deg, #536588, #aa76bbcb, #536588);
+  height: 1.5px;
+  margin-top: 2px;
+  width: 77%;
 }
+
+p.current-date {
+  text-align: center;
+  font-size: 17px;
+}
+
+
+
+
+
+
