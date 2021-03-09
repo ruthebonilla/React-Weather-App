@@ -15,13 +15,15 @@ const [forecast, setForecast]=useState(null);
     
     if (loaded && props.city === forecast.city.name) {
         return (
-          <div className="WeatherForecast row">
+          <div className="card" id="forecastCard">
+            <div className="WeatherForecast row">
             <HourlyForecast data={forecast.list[0]} />
             <HourlyForecast data={forecast.list[1]} />
             <HourlyForecast data={forecast.list[2]} />
             <HourlyForecast data={forecast.list[3]} />
             <HourlyForecast data={forecast.list[4]} />
           </div>
+        </div>
         );
     }else{
     let apiKey="06e918cbeda5078872c6886bf7421496";

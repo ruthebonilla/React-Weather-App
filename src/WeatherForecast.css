@@ -1,13 +1,24 @@
-.WeatherForecast{
-    text-align: center;
-    font-size: 15px;
-    margin-top: 10px;
-
+.WeatherForecast {
+  text-align: center;
+  font-size: 15px;
+  margin-top: 10px;
+  margin-bottom: 15px;
+  color: #cfc9c9;
 }
 
-
-.WeatherForecast canvas{
-  display:block;
+.WeatherForecast canvas  {
+  display: block;
   margin: 0 auto;
-  margin-bottom: 10px;
+  margin-bottom: 18px;
+  margin-top: 5px;
+}
+#forecastCard {
+  position: relative;
+  margin-top: -8px;
+  padding: 0px;
+  left: -41px;
+  border-radius: 40px;
+  bottom: -79px;
+  background: rgba(227, 235, 241, 0.1);
+  
 }
