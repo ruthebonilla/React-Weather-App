@@ -26,7 +26,7 @@ export default function WeatherInfo(props) {
           </ul>
         </div>
       </div>
-      
+
       <p className="current-date">
         -last updated-
         <br />
